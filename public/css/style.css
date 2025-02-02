@@ -1,0 +1,203 @@
+table {
+    border-collapse: collapse; /* Убирает двойные линии между границами */
+    width: 100%;
+    margin-top: 20px;
+}
+
+table th,table td {
+    border: 1px solid #ddd; /* Устанавливает рамку для таблицы, заголовков и ячеек */
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 8px; /* Добавляет отступы внутри ячеек */
+    text-align: left; /* Выравнивает текст влево */
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding:20px 0;
+    background-color: #007bff;
+    color: #fff;
+    /*margin-bottom: 20px;*/
+}
+
+header h1 {
+    /*color: #333;*/
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+header nav a {
+    margin: 0 10px;
+    /*color: #007bff;*/
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Основной блок */
+main {
+
+    /*flex: 1; !* Заставляем main занимать всё оставшееся пространство *!*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; !* Центрируем содержимое по горизонтали *!*/
+    align-items: center; /* Центрируем содержимое по вертикали */
+    padding: 20px; /* Внутренний отступ */
+    gap: 20px;
+
+}
+
+.form-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+
+main > div {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Стили формы */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"]{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus{
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.info-message {
+    color: #555;
+    font-size: 14px;
+}
+
+.add-operation,
+.recent-operations {
+    width: 100%;            /* Занимаем всю ширину контейнера */
+    max-width: 600px;       /* Устанавливаем ограничение по ширине */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
